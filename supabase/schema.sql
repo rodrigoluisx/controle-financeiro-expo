@@ -10,6 +10,11 @@ create table if not exists public.transactions (
 
 alter table public.transactions enable row level security;
 
+drop policy if exists "read own transactions" on public.transactions;
+drop policy if exists "insert own transactions" on public.transactions;
+drop policy if exists "update own transactions" on public.transactions;
+drop policy if exists "delete own transactions" on public.transactions;
+
 create policy "read own transactions" on public.transactions
 for select using (auth.uid() = user_id);
 
