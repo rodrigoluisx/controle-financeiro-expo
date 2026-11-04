@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "Controle Financeiro",
+    "slug": "controle-financeiro",
+    "scheme": "controlefinanceiro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "plugins": [
+      "expo-router",
+      "expo-status-bar"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
